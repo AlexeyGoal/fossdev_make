@@ -8,7 +8,6 @@ def divide(a,b):
         raise ValueError("Need arithmetic")
     return a/b
 
-print(divide(10,2))
 
 
 
