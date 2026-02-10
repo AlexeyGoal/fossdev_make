@@ -10,5 +10,8 @@ def test_divide():
     a = 4
     b = 2
     assert divide(a,b) == 2
+def test_division_prohibited():
+    try:
+        divide("A","B")
 test_sum()
 test_divide()
