@@ -33,9 +33,14 @@ def test_addition_clusters():
     assert add(0,-2) == -2
     print("Test clusters passed")
 
+def test_addition_commutative():
+    assert add(10,4) == 14
+    assert add(4,10) == 14
+    print("Test commutative passed")
 if __name__ == "__main__":
     test_addition()
     test_addition_with_bug()
     test_addition_duplicate()
     test_addition_clusters()
+    test_addition_commutative()
     # test_addition_overkill() can try
