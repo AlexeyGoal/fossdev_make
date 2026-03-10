@@ -14,7 +14,5 @@ def calculate_ndfl(income):
         if income > start:
             return (income - start) * taxrate + addition
 
-        raise RuntimeError(f"Error in tax calculation {income}")
+    raise RuntimeError(f"Error in tax calculation {income}")
         
-
-    return result
