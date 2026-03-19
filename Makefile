@@ -1,8 +1,16 @@
 
 
+
 create-practice:
-	mkdir -p demo-practice/src demo-practice/tests demo-practice/docs
+ifndef PRACTICE
+	$(error must pass val via PRACTICE)
+endif 
+	mkdir -p $(PRACTICE)
 	touch demo-practice/README.md
 
+
 remove-practice:
-	rm -rf demo-practice
+ifndef PRACTICE
+	$(error must pass val via PRACTICE)
+endif 
+	rm -rf $(PRACTICE)
