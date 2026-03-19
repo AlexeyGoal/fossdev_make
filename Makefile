@@ -1,6 +1,7 @@
 
 # .DEFAULT_GOAL := help
 
+PRACTICE = prac
 create-practice:
 ifndef PRACTICE
 	$(error must pass val via PRACTICE)
